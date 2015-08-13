@@ -17,7 +17,7 @@ public class Solution {
 				numsMap.put(nums[i], i + 1);
 			}
 		}
-		
+
 		for (int i = 0; i < nums.length; i++) {
 			int a_i = 0, b_i = 0;
 			int b = target - nums[i];
@@ -34,15 +34,15 @@ public class Solution {
 				}
 				retIndexs = sort(a_i, b_i);
 				break;
-			} 
+			}
 		}
 
 		return retIndexs;
 	}
-	
-	private int[] sort(int a, int b){
+
+	private int[] sort(int a, int b) {
 		int[] ret = new int[2];
-		
+
 		if (a > b) {
 			ret[0] = b;
 			ret[1] = a;
@@ -50,7 +50,7 @@ public class Solution {
 			ret[1] = b;
 			ret[0] = a;
 		}
-		
+
 		return ret;
 	}
 
