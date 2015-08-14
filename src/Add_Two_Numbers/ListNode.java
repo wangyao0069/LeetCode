@@ -1,10 +1,10 @@
 package Add_Two_Numbers;
 
 public class ListNode {
-	int val;
-	ListNode next;
+	public int val;
+	public ListNode next;
 
-	ListNode(int x) {
+	public ListNode(int x) {
 		val = x;
 	}
 }
