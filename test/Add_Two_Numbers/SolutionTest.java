@@ -1,12 +1,5 @@
 package Add_Two_Numbers;
 
-import static org.junit.Assert.*;
-
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.List;
-
-import org.junit.AfterClass;
 import org.junit.Test;
 
 public class SolutionTest {
