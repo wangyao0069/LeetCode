@@ -1,11 +1,39 @@
 package Two_Sum;
 
 import java.util.HashMap;
+import java.util.HashSet;
 import java.util.Map;
+import java.util.Set;
 
 public class Solution {
-
+	
+	/**
+	 * more elegant and efficient
+	 * @param nums
+	 * @param target
+	 * @return
+	 */
 	public int[] twoSum(int[] nums, int target) {
+		
+		int[] ret = new int[2];
+		Map<Integer, Integer> numsMap = new HashMap<Integer, Integer>();
+		
+		for (int i = 0; i < nums.length; i++) {
+			int b = target - nums[i];
+			if (numsMap.containsKey(b)) {
+				ret[0] = numsMap.get(b);
+				ret[1] = i+1;
+				break;
+			}
+			
+			numsMap.put(nums[i], i+1);
+		}
+		
+		return ret;
+		
+	}
+
+	public int[] twoSum_v1(int[] nums, int target) {
 		int[] retIndexs = null;
 
 		Map<Integer, Integer> numsMap = new HashMap<Integer, Integer>();
