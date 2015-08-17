@@ -1,12 +1,15 @@
-package Lowest_Common_Ancestor_of_a_Binary_Search_Tree;
+package Kth_Smallest_Element_in_a_BST;
+
+import static org.junit.Assert.*;
 
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 
-import Lowest_Common_Ancestor_of_a_Binary_Search_Tree.Solution;
+import Kth_Smallest_Element_in_a_BST.Solution;
 
 public class SolutionTest {
+
 	private Solution solution;
 	
 	TreeNode rootNode = new TreeNode(6);
@@ -34,31 +37,29 @@ public class SolutionTest {
 	}
 	
 	@Test
-	public void testLowestCommonAncestor1() {
-		TreeNode retNode= solution.lowestCommonAncestor(rootNode, node2, node8);
-		
-		Assert.assertEquals(rootNode, retNode);
+	public void testKthSmallest1() {
+		int ret = solution.kthSmallest(rootNode, 2);
+		Assert.assertEquals(2, ret);
 	}
-	
 	@Test
-	public void testLowestCommonAncestor2() {
-		TreeNode retNode= solution.lowestCommonAncestor(rootNode, node2, node4);
-		
-		Assert.assertEquals(node2, retNode);
+	public void testKthSmallest2() {
+		int ret = solution.kthSmallest(rootNode, 8);
+		Assert.assertEquals(8, ret);
 	}
-	
 	@Test
-	public void testLowestCommonAncestor3() {
-		TreeNode retNode= solution.lowestCommonAncestor(rootNode, node3, node5);
-		
-		Assert.assertEquals(node4, retNode);
+	public void testKthSmallest3() {
+		int ret = solution.kthSmallest(rootNode, 5);
+		Assert.assertEquals(5, ret);
 	}
-	
 	@Test
-	public void testLowestCommonAncestor4() {
-		TreeNode retNode= solution.lowestCommonAncestor(rootNode, node4, node7);
-		
-		Assert.assertEquals(rootNode, retNode);
+	public void testKthSmallest4() {
+		int ret = solution.kthSmallest(rootNode, 6);
+		Assert.assertEquals(6, ret);
+	}
+	@Test
+	public void testKthSmallest5() {
+		int ret = solution.kthSmallest(rootNode, 9);
+		Assert.assertEquals(9, ret);
 	}
 
 }

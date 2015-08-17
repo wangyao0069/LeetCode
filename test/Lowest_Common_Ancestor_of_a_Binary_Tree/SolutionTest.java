@@ -1,10 +1,10 @@
-package Lowest_Common_Ancestor_of_a_Binary_Search_Tree;
+package Lowest_Common_Ancestor_of_a_Binary_Tree;
 
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 
-import Lowest_Common_Ancestor_of_a_Binary_Search_Tree.Solution;
+import Lowest_Common_Ancestor_of_a_Binary_Tree.TreeNode;
 
 public class SolutionTest {
 	private Solution solution;
