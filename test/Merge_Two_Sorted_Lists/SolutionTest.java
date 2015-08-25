@@ -1,6 +1,5 @@
 package Merge_Two_Sorted_Lists;
 
-
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
@@ -9,13 +8,10 @@ import Merge_Two_Sorted_Lists.Solution;
 public class SolutionTest {
 
 	private Solution solution;
-	
-	
-	
+
 	@Before
 	public void before() {
 		solution = new Solution();
-		
 	}
 
 	@Test
