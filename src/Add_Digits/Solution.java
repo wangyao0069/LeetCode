@@ -6,7 +6,6 @@ public class Solution {
 		if (num == 0) {
 			return 0;
 		}
-		
 		int ret = num % 9;
 
 		if (ret == 0) {
